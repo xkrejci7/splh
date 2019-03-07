@@ -1,9 +1,6 @@
 html, body {
     height: 100%;
     margin: 0;
-    align-items: center;
-    justify-content: center;
-    display: flex;
 }
 
 section {
@@ -38,9 +35,9 @@ h1 {
 }
 
 .name {
+    font-size: 800%;
     margin: auto;
-    margin-left: 0;
-    font-size: 200%;
+    margin-top: 10%;
 }
 
 .middle {
@@ -48,13 +45,11 @@ h1 {
 }
 
 .cas {
-    margin: auto;
     font-size: 800%;
 }
 
 .table {
     font-size: 150%;
-    width: 100%;
 }
 
 .category {

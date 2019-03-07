@@ -16,10 +16,10 @@ function readFile(e) {
         /* DO SOMETHING WITH workbook HERE */
         ProcessExcel(workbook);
         poc++;
-        if(poc > 600) {
+        if (poc > 600) {
             location.reload();
         }
-  //      setTimeout(readFile, 1500);
+          setTimeout(readFile, 1500);
     });
 }
 
@@ -28,9 +28,7 @@ function ProcessExcel(workbook) {
     var first_sheet_name = workbook.SheetNames[0];
 
     /* Var array by ROW */
-    var excelRows = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[first_sheet_name]);
-
-    $('#category').text(first_sheet_name);
+    var excelRows = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[first_sheet_name]);    
 
     if ($('#table').length) {
 
@@ -58,7 +56,7 @@ function ProcessExcel(workbook) {
         }
     } else {
         $('#table_here').append($("<table>"));
-        $('table').attr("class", "table table-striped table-sm");
+        $('table').attr("class", "table table-striped");
         $('table').attr("id", "table");
         $('table').append($("<thead>"));
         $('thead').append($("<tr>"));
@@ -72,20 +70,22 @@ function ProcessExcel(workbook) {
 
 
         if (isNaN(excelRows[0]["1.kolo"])) {
-            $('#time').text("0.00");
+            $('#time').text("0.00 s");
         } else {
-            $('#time').text(excelRows[0]["1.kolo"]);
+            $('#time').text(excelRows[0]["1.kolo"] + " s");
         }
-
-        $('#foto').append($("<img src=\"fotos\/" + excelRows[0]["jméno"] + ".jpg\" alt=\"Foto\" class=\"foto img-rounded img-responsive\">"));
-        $('#category').text(first_sheet_name);
 
         for (var i = 0; i < excelRows.length; i++) {
             $('tbody').append($("<tr id = \"row-" + i + "\">"));
             $('#row-' + i).append($("<td>").text(excelRows[i]["jméno"]));
             $('#row-' + i).append($("<td>").text(excelRows[i]["oddíl"]));
             $('#row-' + i).append($("<td>").text(excelRows[i]["rok nar."]));
-            $('#row-' + i).append($("<td>").text(excelRows[i]["nejlepší čas"]));
+            var reg = new RegExp('^[0-9]+.*');
+            if (!(reg.test(excelRows[i]["nejlepší čas"]))) {
+                $('#row-' + i).append($("<td>").text("0.00 s"));
+            } else {
+                $('#row-' + i).append($("<td>").text(excelRows[i]["nejlepší čas"]  + " s"));
+            }
         }
 
         var max = 8;
@@ -106,10 +106,8 @@ function reloadTable(excelRows, i, row) {
     if (excelRows[i][row + ".kolo"] === "999.99") {
         $('#time').empty().text("NaN");
     } else {
-        $('#time').empty().text(excelRows[i][row + ".kolo"]);
+        $('#time').empty().text(excelRows[i][row + ".kolo"] + " s");
     }
-
-    $('#foto').empty().append($("<img src=\"fotos\/" + excelRows[i]["jméno"] + ".jpg\" alt=\"Foto\" class=\"foto img-rounded img-responsive\">"));
 
     var max = 8;
     if (excelRows.length < 8) {
@@ -123,6 +121,6 @@ function reloadTable(excelRows, i, row) {
     for (var j = (i + max - 1); j > i; j--) {
         $('#row-' + j).removeClass("hidden");
     }
-    
+
     return true;
 }
