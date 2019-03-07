@@ -58,7 +58,7 @@ function ProcessExcel(workbook) {
         }
     } else {
         $('#table_here').append($("<table>"));
-        $('table').attr("class", "table table-striped");
+        $('table').attr("class", "table table-striped table-sm");
         $('table').attr("id", "table");
         $('table').append($("<thead>"));
         $('thead').append($("<tr>"));
