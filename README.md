@@ -1,3 +1,9 @@
-# splh
+# Skript na zobrazení výsledků
 
-git clone https://github.com/xkrejci7/splh/
+
+
+Instalace
+------------
+Git command:
+
+	git clone https://github.com/xkrejci7/splh/
