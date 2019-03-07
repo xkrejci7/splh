@@ -1,0 +1,23 @@
+Jmeno	Prijmeni	Oddil	Cas
+Ales	Tetur	Sokol Brno I	00:04,30
+Adam	Koval	Sokol Brno I	00:05,20
+Pavel	Machan	Sokol Brno I	00:06,10
+Tomas	Miculka	Sokol Brno I	00:05,36
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

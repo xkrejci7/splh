@@ -1,0 +1,22 @@
+jméno	oddíl	rok nar.	výchozí èas	1.kolo	2.kolo	3.kolo	4.kolo	nejlepší èas		poøadí
+Novák Aleš	Sokol Šternberk	1987	6,20	6,01	6,07	5,80	5,92	5,80		1
+Cigl Matìj	Sokol Brno I	1999	7,10	6,32	6,61	6,40	6,25	6,25		2
+Nantl Jakub	Sokol Královo Pole	1994	6,90	6,86	6,91	7,18	8,60	6,86		3
+Øezníèek Filip	Sokol Brno I	1998	7,15	6,97	6,98	7,14	8,34	6,97		4
+Mìcháèek Natanael	Palestra Praha	1990	7,20	7,56	7,57	7,44	8,41	7,44		5
+Kovál Adam	Sokol Brno I	1998	8,11	7,65	7,72	7,54	7,82	7,54		6
+Szörényi Zoltan	Hungary	1984	7,00	7,70	999,00	7,96	7,79	7,70		7
+Kotlan Jiøí	Sokol Pøíbram	1987	8,00	8,07	7,97	7,86	7,89	7,86		8
+Zajíèek Petr	VPŠ a SPŠ MV Holešov	1999	9,20	9,55	9,11	9,40	10,77	9,11		9
+Voborný Marek	Sokol Køoví	1989	10,00	9,96	9,56	9,38	9,46	9,38		10
+Nantl Jan	Sokol Královo Pole	1996	11,00	10,97	888	9,47	888	9,47		11
+Franek Antonín	VPŠ a SPŠ MV Holešov	1999	9,20	12,11	10,16	9,65	10,24	9,65		12
+Gacho Dalibor	Barstyle Brno	1999	7,50	999	11,26	888,00	11,62	11,26		13
+Krejèí Milan	Sokol Brno I	1973	12,50	11,59	11,93	11,90	11,96	11,59	S	14
+Kulovaný Petr	Èeladná	1974	15,00	11,91	888,00	13,39	888,00	11,91		15
+Nantl Ondøej	Sokol Královo Pole	1995	12,50	13,70	12,64	13,64	14,26	12,64		16
+Fridrich Andrej	Prievidza (SK)	1978	16,11	15,24	14,88	15,25	15,59	14,88		17
+								 		 
+								 		 
+										
+										

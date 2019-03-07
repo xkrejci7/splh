@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+section {
+    height: 75%;
+}
+
+.logo {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    margin: auto;
+    margin-left: 0;
+    font-size: 200%;
+}
+
+.middle {
+    margin: auto;
+}
+
+.cas {
+    margin: auto;
+    margin-left: 15%;
+    font-size: 800%;
+}
+
+.table {
+    font-size: 150%;
+}
+
+.category {
+    margin-left: 15px;
+}
+
+.hidden {
+    display: none;
+}

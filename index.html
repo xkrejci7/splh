@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sheets.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <!-- JSON library -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+        <script type="text/javascript" src=" https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+        <title>Výsledky</title>
+        <script src="script.js"></script>
+    </head>
+
+    <body onload="readFile()">
+
+        <section>
+            <div class="container-fluid" style="height: 100%;">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="cas">
+                            <b id="name"></b>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">                 
+                    <div class="col-md-12 text-center">
+                        <p class="cas" id="time"></p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="table-responsivle" id="table_here">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
