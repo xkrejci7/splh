@@ -56,14 +56,14 @@ function ProcessExcel(workbook) {
         }
     } else {
         $('#table_here').append($("<table>"));
-        $('table').attr("class", "table table-striped");
+        $('table').attr("class", "table table-striped table-sm");
         $('table').attr("id", "table");
         $('table').append($("<thead>"));
         $('thead').append($("<tr>"));
-        $('tr').append($("<th>").text("Jmeno"));
-        $('tr').append($("<th>").text("Oddil"));
-        $('tr').append($("<th>").text("rok nar"));
-        $('tr').append($("<th>").text("nejlepší čas"));
+        $('tr').append($("<th>").text("Jméno"));
+        $('tr').append($("<th>").text("Oddíl"));
+        $('tr').append($("<th>").text("Rok narození"));
+        $('tr').append($("<th>").text("Nejlepší čas"));
         $('table').append($("<tbody>"));
 
         $('#name').text(excelRows[0]["jméno"]);
